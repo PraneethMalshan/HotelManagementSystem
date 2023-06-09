@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="607.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookNowController">
+   <children>
+      <ImageView fitHeight="677.0" fitWidth="1166.0" layoutX="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/kbn.png" />
+         </image></ImageView>
+      <Pane layoutX="663.0" layoutY="310.0" opacity="0.64" prefHeight="208.0" prefWidth="346.0" style="-fx-background-color: #8beabb; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="148.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meals">
+               <font>
+                  <Font name="Bernard MT Condensed" size="24.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="LocalRoom" layoutX="79.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Local Meals" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Meals" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="ChinessMeals" layoutX="76.0" layoutY="108.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Chiness Meals" textFill="#f2eeee" toggleGroup="$Meals">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="FrenchMeals" layoutX="79.0" layoutY="162.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="French Meals" textFill="WHITE" toggleGroup="$Meals">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></RadioButton>
+         </children>
+      </Pane>
+      <Pane layoutX="663.0" layoutY="33.0" opacity="0.64" prefHeight="228.0" prefWidth="346.0" style="-fx-background-color: #8beabb; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="145.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms">
+               <font>
+                  <Font name="Bernard MT Condensed" size="27.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="doubleRoom" layoutX="82.0" layoutY="105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Double Rooms" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Rooms" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="TripleRoom" layoutX="81.0" layoutY="146.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Triple Rooms" textFill="WHITE" toggleGroup="$Rooms">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="QuardRoom" layoutX="81.0" layoutY="181.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Quard Rooms" textFill="WHITE" toggleGroup="$Rooms">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="singleRoom" layoutX="79.0" layoutY="61.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 40;" text="Single Rooms" textFill="WHITE" toggleGroup="$Rooms">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="71.0" fitWidth="212.0" layoutX="863.0" layoutY="543.0" onMouseClicked="#ContinueOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Cn.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="28.0" layoutY="11.0" opacity="0.72" prefHeight="501.0" prefWidth="460.0" style="-fx-background-color: bfa1e4; -fx-background-radius: 20;">
+         <children>
+            <Text layoutX="16.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :-">
+               <font>
+                  <Font name="Bodoni MT Black" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="13.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TellNo :-">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="16.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :- ">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID No :-">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="16.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :-">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="AddressId" layoutX="113.0" layoutY="351.0" prefHeight="71.0" prefWidth="325.0" />
+            <TextField fx:id="EmailId" layoutX="113.0" layoutY="188.0" prefHeight="31.0" prefWidth="325.0" />
+            <TextField fx:id="TellNo" layoutX="113.0" layoutY="264.0" prefHeight="31.0" prefWidth="325.0" />
+            <TextField fx:id="IDNoId" layoutX="113.0" layoutY="86.0" prefHeight="31.0" prefWidth="325.0" />
+            <TextField fx:id="NameId" layoutX="120.0" layoutY="22.0" prefHeight="31.0" prefWidth="325.0" />
+         </children>
+      </Pane>
+      <TextField fx:id="CheckIn" layoutX="154.0" layoutY="528.0" opacity="0.67" prefHeight="31.0" prefWidth="125.0" />
+      <TextField fx:id="CheckOut" layoutX="154.0" layoutY="573.0" opacity="0.64" prefHeight="31.0" prefWidth="125.0" />
+      <TextField fx:id="RoomNo" layoutX="432.0" layoutY="526.0" opacity="0.66" prefHeight="31.0" prefWidth="125.0" />
+      <Pane layoutX="289.0" layoutY="523.0" opacity="0.66" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: blue; -fx-background-radius: 30;">
+         <children>
+            <Text fill="#c6bdbd" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room No :- ">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="19.0" layoutY="568.0" opacity="0.66" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: blue; -fx-background-radius: 30;">
+         <children>
+            <Text fill="#c6bdbd" layoutX="4.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out :- ">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="19.0" layoutY="521.0" opacity="0.67" prefHeight="41.0" prefWidth="125.0" style="-fx-background-color: blue; -fx-background-radius: 30;">
+         <children>
+            <Text fill="#c6bdbd" layoutX="8.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check In :- ">
+               <font>
+                  <Font name="Bodoni MT Black" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

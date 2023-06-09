@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="429.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookingDeleteResultCollection">
+   <children>
+      <ImageView fitHeight="581.0" fitWidth="963.0" layoutX="-10.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/sx.png" />
+         </image></ImageView>
+      <Text fill="#00050a" layoutX="209.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your  Delete Is SuccessFull !">
+         <font>
+            <Font name="Bernard MT Condensed" size="50.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="174.0" onMouseClicked="#tickDelOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/tk.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
